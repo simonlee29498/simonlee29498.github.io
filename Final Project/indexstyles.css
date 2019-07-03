@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500&display=swap');
+
+body {
+  margin: 0;
+}
+
+header {
+	background-color: #faf34d;
+	box-shadow: 0 2px 6px 0px #b5b5b5;
+	font-family: 'Cabin Sketch', cursive;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+.headercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 1 0 30vw;
+}
+
+li {
+  margin: 0 5em;
+}
+
+a.underline:hover {
+	font-size: 1.7em;
+}
+
+a.underline{
+  color: black;
+	font-size: 1.4em;
+	text-decoration: none;
+  position:relative;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.underline:after {
+  display:block;
+  content: '';
+  border-bottom: solid 3px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  transform-origin:100% 50%
+}
+
+.underline:hover:after {
+  transform: scaleX(1);
+  transform-origin:0 50%;
+}
+
+.menu-1 {
+  justify-content: flex-end;
+}
+
+.logo {
+  flex: 0 1 20vw;
+  text-align: center;
+}
+
+#imagewrapper {
+    background: url("images/Assortment-of-Juices-at-The-Juice-Standard-magic.jpg") no-repeat center center;
+    background-size: cover;
+    height: 40em;
+    background-size: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+}
+
+.text-container {
+	position: absolute;
+	top: 11.5em;
+	right: 8em;
+	width: 18em;
+  height: 20em;
+	background-color: #bdffee;
+	border-style: dotted;
+	text-align: center;
+	padding: 15px 20px 23px;
+}
+
+#infotag {
+	font-size: 2.3em;
+	font-family: 'Staatliches', cursive;
+  margin-bottom: 0.5em;
+}
+
+p.lighttext {
+	font-family: 'Comfortaa', cursive;
+	font-weight: 500;
+	font-size: 1em;
+	color: grey;
+}
+
+button {
+  z-index: 1;
+  position: relative;
+  margin-bottom: 0.7em;
+  font-family: 'Staatliches', cursive;
+	font-size: 1.5em;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: 1px solid grey;
+  background-color: #d9c10f;
+  overflow: hidden;
+  transition: color 0.4s ease-in-out;
+}
+
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #3cefff;
+  transform-origin: center;
+  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+  transition: transform 0.45s ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #161616;
+}
+
+button:hover::before {
+  transform: translate3d(50%, -50%, 0) scale3d(30, 15, 15);
+}
+
+blockquote {
+	font-family: 'Comfortaa', cursive;
+	font-size: 2em;
+	font-weight: 350;
+	line-height: 3em;
+  width: 90%;
+}
+
+.textseparationimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3em;
+}
+
+hr {
+	width: 60%;
+}
+
+h2.gridh {
+	font-family: 'Staatliches', cursive;
+	font-size: 3em;
+	text-align: center;
+	color: #F52549;
+	text-decoration: underline;
+}
+
+.juicegrid {
+	display: flex;
+	justify-content: center;
+}
+
+figure.juiceinfo {
+	width: 30%;
+}
+
+figure > img {
+	width: 100%;
+}
+
+figcaption {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.redirlinks {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  width: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3em;
+  margin-bottom: 2.5em;
+}
+
+#seemore {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main	{
+  float: left;
+  margin-top: 8vh;
+  width: 83%;
+}
+
+.side1 {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 85vh;
+  margin-top: 1.5em;
+  margin-right: 1em;
+  width: 15%;
+  background-color: #F96574;
+}
+
+figure.sidebarnews {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2.sidebartitle {
+  font-family: 'Staatliches', cursive;
+	font-size: 2em;
+	text-align: center;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #faf34d;
+  text-align: center;
+  padding-top: 0px;
+}
+
+small {
+  font-family: 'Comfortaa', cursive;
+}
+
+h2.banner-header {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+a.signuplink {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+a.signuplink::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: #fc2f70;
+  transform-origin: bottom center;
+  transform: scaleY(0.1);
+  transition: all 0.1s ease-in-out;
+}
+
+a.signuplink:hover::before {
+  transform: scaleY(1);
+  background-color: hsla(341, 97%, 59%, 0.75);
+}
+
+div.couponbanner {
+  background-color: #26B4E2;
+  z-index: 1;
+  margin-top: 2em;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+}
+
+div.couponbanner:hover {
+  -webkit-animation: jelly 0.5s;
+  animation: jelly 0.5s;
+}
+
+@-webkit-keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+
+@keyframes jelly {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
